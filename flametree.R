@@ -14,16 +14,14 @@ flametree_grow(seed = 213,
 ) %>% 
   flametree_save(filename = "ice_trees.png")
 
-#Try below on desktop with time =12 and split = 4
 flametree_grow(
-  seed = 2021,
-  time = 10,
-  scale = c( 0.6, 0.8, 2),
-  angle = c(-30, 60),
+  seed = 87,
+  time = 12,
+  scale = c( 0.2, 0.8, 2),
+  angle = c(-30, -10, 45, 90),
   split = 2,
   trees = 3,
-  shift_x = spark_decay(),
-  shift_y = spark_linear()
+  shift_x = spark_decay()
 ) %>% 
   flametree_plot(
     palette = c("cyan"),
