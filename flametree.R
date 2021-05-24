@@ -44,3 +44,18 @@ flametree_grow(scale = c(2, 4, 6, 8, 10),
     palette = viridisLite::inferno(n = 10)
   ) %>% 
   flametree_save(filename = here::here("images/twos_to_ten.png"))
+
+flametree_grow(
+  seed = 6718,
+  time = 8,
+  scale = c(0.50, 0.75, 1.25, 1.5),
+  angle = c(-60, 15, 30, 45),
+  trees = 1) %>% 
+  flametree_plot(
+    palette = c("#b0fc38", "#03ac13", "#32612d", "#234f1e", "#03c04a",
+                "#aef359", "#99edc3", "#728c69")
+  )
+
+
+
+
