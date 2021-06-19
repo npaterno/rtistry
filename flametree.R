@@ -55,7 +55,3 @@ flametree_grow(
     palette = c("#b0fc38", "#03ac13", "#32612d", "#234f1e", "#03c04a",
                 "#aef359", "#99edc3", "#728c69")
   )
-
-
-
-
