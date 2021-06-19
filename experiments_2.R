@@ -11,4 +11,4 @@ seq(-10,10,0.05) %>%
   dark_theme_void() + 
   guides(color = FALSE)
 
-ggsave(here::here("images/conic_wave.tiff"), dpi = 600)
+ggsave(here::here("images/conic_wave_twitter.png"))
