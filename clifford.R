@@ -32,6 +32,6 @@ d=-1.90866735205054
 
 df=createTrajectory(10000000, 0, 0, a, b, c, d)
 
-png("Clifford.png", units="px", width=1600, height=1600, res=300)
+png(here::here("images/Clifford.png", units="px", width=1600, height=1600, res=300))
 ggplot(df, aes(x, y)) + geom_point(color="white", shape=46, alpha=.01) + opt
 dev.off()
