@@ -2,7 +2,7 @@ library(ggplot2)
 library(dplyr)
 library(ggdark)
 
-seq(-10, 10, by = 0.05) %>% 
+seq(-10, 10, by = 0.025) %>% 
   expand.grid(x = ., y = .) %>% 
   ggplot()+
   geom_point(aes(x = x^2+x*y^2-1,
