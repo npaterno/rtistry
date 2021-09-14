@@ -27,7 +27,7 @@ cppFunction('DataFrame createTrajectory(int n, double x0, double y0,
 
 a=-1.24458046630025
 b=-1.25191834103316 
-c=-1.81590817030519 
+c=1.81590817030519 
 d=-1.90866735205054
 
 df=createTrajectory(10000000, 0, 0, a, b, c, d)
