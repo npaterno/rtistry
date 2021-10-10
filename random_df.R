@@ -35,7 +35,6 @@ ggplot(rdf, aes(x = x, y = y, color = r))+
 # Random rotation and random translation
 random_df_2 <- function(x, y, n){
   df <- data.frame(x = rep(x,n),y = rep(y,n), r = rep(1, n))
-  
   for (i in 2:n){
     ctrl <-  sample(c(0,1), 1)
     rand1 <- sample(1:2, 1)
@@ -56,10 +55,11 @@ random_df_2 <- function(x, y, n){
   return(df)
 }
 
-rdf_2 <- random_df_2(1,1,10000)
+rdf_2 <- random_df_2(1,1,1000000)
+rrdf <- random_df_2(runif(1), runif(1), sample(10000:100000,1))
 
-ggplot(rdf_2, aes(x = x, y = y, color = r))+
-  geom_point(alpha = 0.25)+
+ggplot(rrdf, aes(x = x, y = y, color = r))+
+  geom_point(alpha = 0.15)+
   scale_color_manual(values = c("#23EDFF", "#F9FF23"))+
   guides(color = "none")+
   dark_theme_void()
