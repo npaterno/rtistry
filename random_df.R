@@ -31,7 +31,7 @@ ggplot(rdf, aes(x = x, y = y, color = r))+
   guides(color = "none")+
   dark_theme_void()
 
-#-------------------------------------------------------------
+--------------------------------------------------------------------------------
 # Random rotation and random translation
 random_df_2 <- function(x, y, n){
   df <- data.frame(x = rep(x,n),y = rep(y,n), r = rep(1, n))

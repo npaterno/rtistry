@@ -55,14 +55,16 @@ random_df <- function(x, y, n){
   }
   # return plot data only
   df <- df %>% 
-    mutate(funct = rw%%5)
+    mutate(funct = rw%%5,
+           row_num = row_number())
   return(df)
 }
 
 
-rdf <- random_df(0,0,499)
+rdf <- random_df(pi,pi,499)
 
 ggplot(rdf, aes(x = x, y = y, color = funct))+
-  geom_point()+
+  #geom_point(size = 0, shape = 20)+
+  geom_line()+
   theme_void()+
   guides(color = "none")
